@@ -1,5 +1,5 @@
 {
-  "name": "mobile",
+  "name": "sea-browser",
   "version": "1.4.1",
   "description": "neo brower mobile",
   "private": false,
@@ -8,7 +8,6 @@
     "@babel/runtime": "7.0.0-beta.55",
     "@material-ui/core": "1.4.3",
     "@material-ui/icons": "2.0.1",
-    "@types/googlemaps": "3.30.11",
     "@types/markerclustererplus": "2.1.33",
     "ajv": "6.5.2",
     "axios": "^0.18.0",
@@ -20,11 +19,9 @@
     "react": "16.4.1",
     "react-chartist": "0.13.1",
     "react-dom": "16.4.1",
-    "react-google-maps": "9.4.5",
     "react-loadable": "^5.5.0",
     "react-router-dom": "4.3.1",
-    "react-scripts": "1.1.4",
-    "react-swipeable-views": "0.12.15"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

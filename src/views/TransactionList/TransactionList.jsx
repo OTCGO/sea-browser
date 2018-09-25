@@ -57,7 +57,6 @@ class TransactionList extends React.Component {
       //transcation list
 
       const transactionResult = (await transactionApi(
-        undefined,
         currentPage,
         count
       )).data.data.TransactionQuery.rows;
