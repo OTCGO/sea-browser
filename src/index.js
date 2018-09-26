@@ -6,15 +6,15 @@ import { IntlProvider } from "react-intl";
 import "assets/css/material-dashboard-react.css?v=1.4.1";
 
 import indexRoutes from "routes/index.jsx";
+import zhCN from "./i18n/zh-CN.json"; //导入 i18n 配置文件
+import enUS from "./i18n/en-US.json";
 
 const hist = createBrowserHistory();
-import zhCN from "./i18n/zh-CN.jsx"; //导入 i18n 配置文件
-import enUS from "./i18n/en-US.jsx";
 
-console.log("zhCN", zhCN);
+console.log("enUS", enUS);
 
 ReactDOM.render(
-  <IntlProvider locale="en" messages={enUS}>
+  <IntlProvider locale={enUS.locale} messages={enUS.messages}>
     <Router history={hist}>
       <Switch>
         {indexRoutes.map((prop, key) => {

@@ -131,14 +131,14 @@ class Block extends React.Component {
         <GridContainer>
           <GridItem xs={12} sm={12} md={12}>
             <Card>
-              <CardHeader color="warning">
+              <CardHeader color="info">
                 <h4 className={classes.cardTitleWhite}>Transaction</h4>
                 <p className={classes.cardCategoryWhite} />
               </CardHeader>
               <CardBody>
                 <Table
                   type="transaction"
-                  tableHeaderColor="warning"
+                  tableHeaderColor="info"
                   tableHead={["txid", "类型", "时间"]}
                   tableData={this.state.transactionlist}
                 />

@@ -56,10 +56,8 @@ class TransactionList extends React.Component {
     try {
       //transcation list
 
-      const transactionResult = (await transactionApi(
-        currentPage,
-        count
-      )).data.data.TransactionQuery.rows;
+      const transactionResult = (await transactionApi(currentPage, count)).data
+        .data.TransactionQuery.rows;
       console.log("transactionResult", transactionResult);
       const transactionArr = [];
       transactionResult.forEach(item => {
@@ -85,16 +83,14 @@ class TransactionList extends React.Component {
       <GridContainer>
         <GridItem xs={12} sm={12} md={12}>
           <Card>
-            <CardHeader color="primary">
+            <CardHeader color="info">
               <h4 className={classes.cardTitleWhite}>最新交易</h4>
-              <p className={classes.cardCategoryWhite}>
-                Here is a subtitle for this table
-              </p>
+              <p className={classes.cardCategoryWhite} />
             </CardHeader>
             <CardBody>
               <Table
                 type="transaction"
-                tableHeaderColor="primary"
+                tableHeaderColor="info"
                 tableHead={["txid", "类型", "时间"]}
                 tableData={this.state.transactionlist}
               />

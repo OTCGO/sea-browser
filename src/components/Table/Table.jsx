@@ -40,6 +40,7 @@ function CustomTable({ ...props }) {
                   return (
                     <TableCell className={classes.tableCell} key={key}>
                       <NavLink
+                        style={{ color: "#3C4858" }}
                         to={"/" + type + "/" + tableData[0][0]}
                         key={key}
                       >
@@ -58,7 +59,7 @@ function CustomTable({ ...props }) {
 }
 
 CustomTable.defaultProps = {
-  tableHeaderColor: "gray"
+  tableHeaderColor: "info"
 };
 
 CustomTable.propTypes = {

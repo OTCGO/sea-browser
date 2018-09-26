@@ -82,11 +82,9 @@ class AssetList extends React.Component {
       <GridContainer>
         <GridItem xs={12} sm={12} md={12}>
           <Card>
-            <CardHeader color="primary">
+            <CardHeader color="info">
               <h4 className={classes.cardTitleWhite}>资产列表</h4>
-              <p className={classes.cardCategoryWhite}>
-                Here is a subtitle for this table
-              </p>
+              <p className={classes.cardCategoryWhite} />
             </CardHeader>
             <CardBody>
               <Table

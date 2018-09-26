@@ -110,8 +110,8 @@ class Home extends React.Component {
         <GridContainer>
           <GridItem xs={12} sm={6} md={3}>
             <Card>
-              <CardHeader color="success" stats icon>
-                <CardIcon color="success">
+              <CardHeader color="info" stats icon>
+                <CardIcon color="info">
                   <Store />
                 </CardIcon>
                 <p className={classes.cardCategory}>新块时间</p>
@@ -123,8 +123,8 @@ class Home extends React.Component {
           </GridItem>
           <GridItem xs={12} sm={6} md={3}>
             <Card>
-              <CardHeader color="warning" stats icon>
-                <CardIcon color="warning">
+              <CardHeader color="info" stats icon>
+                <CardIcon color="info">
                   <Icon>content_copy</Icon>
                 </CardIcon>
                 <p className={classes.cardCategory}>开始时间</p>
@@ -138,8 +138,8 @@ class Home extends React.Component {
           </GridItem>
           <GridItem xs={12} sm={6} md={3}>
             <Card>
-              <CardHeader color="success" stats icon>
-                <CardIcon color="success">
+              <CardHeader color="info" stats icon>
+                <CardIcon color="info">
                   <Store />
                 </CardIcon>
                 <p className={classes.cardCategory}>运行时间</p>
@@ -156,8 +156,8 @@ class Home extends React.Component {
           </GridItem>
           <GridItem xs={12} sm={6} md={3}>
             <Card>
-              <CardHeader color="danger" stats icon>
-                <CardIcon color="danger">
+              <CardHeader color="info" stats icon>
+                <CardIcon color="info">
                   <Icon>info_outline</Icon>
                 </CardIcon>
                 <p className={classes.cardCategory}>资产数量</p>
@@ -187,8 +187,8 @@ class Home extends React.Component {
           </GridItem>
           <GridItem xs={12} sm={6} md={3}>
             <Card>
-              <CardHeader color="warning" stats icon>
-                <CardIcon color="warning">
+              <CardHeader color="info" stats icon>
+                <CardIcon color="info">
                   <Icon>content_copy</Icon>
                 </CardIcon>
                 <p className={classes.cardCategory}>交易数量</p>
@@ -221,14 +221,14 @@ class Home extends React.Component {
         <GridContainer>
           <GridItem xs={12} sm={12} md={12}>
             <Card>
-              <CardHeader color="success">
+              <CardHeader color="info">
                 <h4 className={classes.cardTitleWhite}>Blocks</h4>
                 <p className={classes.cardCategoryWhite} />
               </CardHeader>
               <CardBody>
                 <Table
                   type="block"
-                  tableHeaderColor="success"
+                  tableHeaderColor="info"
                   tableHead={["高度", "交易数", "时间"]}
                   tableData={this.state.blocklist}
                 />
@@ -248,14 +248,14 @@ class Home extends React.Component {
 
           <GridItem xs={12} sm={12} md={12}>
             <Card>
-              <CardHeader color="warning">
+              <CardHeader color="info">
                 <h4 className={classes.cardTitleWhite}>Transaction</h4>
                 <p className={classes.cardCategoryWhite} />
               </CardHeader>
               <CardBody>
                 <Table
                   type="transaction"
-                  tableHeaderColor="warning"
+                  tableHeaderColor="info"
                   tableHead={["txid", "类型", "时间"]}
                   tableData={this.state.transactionlist}
                 />

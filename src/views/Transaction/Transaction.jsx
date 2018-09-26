@@ -50,6 +50,7 @@ class Transaction extends React.Component {
 
       const arrObj = [
         {
+          // name: <FormattedMessage id="title" />,
           name: "时间",
           value: `${moment(rows[0].time * 1000).format(
             "YYYY-MM-DD | HH:mm:ss"
@@ -134,7 +135,7 @@ class Transaction extends React.Component {
         <GridContainer>
           <GridItem xs={12} sm={12} md={12}>
             <Card>
-              <CardHeader color="warning">
+              <CardHeader color="info">
                 <h4 className={classes.cardTitleWhite}>Transaction</h4>
                 <p className={classes.cardCategoryWhite} />
               </CardHeader>

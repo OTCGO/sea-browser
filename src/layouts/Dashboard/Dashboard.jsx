@@ -66,13 +66,16 @@ class App extends React.Component {
     window.removeEventListener("resize", this.resizeFunction);
   }
   render() {
+   
     const { classes, ...rest } = this.props;
+    // console.log('layout',this.props.intl.formatMessage({id:"title"}))
     return (
       <div className={classes.wrapper}>
         <Sidebar
           routes={dashboardRoutes}
           logoText={
-          "11" }
+            <FormattedMessage id="title" />
+           }
           logo={logo}
           image={image}
           handleDrawerToggle={this.handleDrawerToggle}
