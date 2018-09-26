@@ -81,7 +81,7 @@ class Address extends React.Component {
               return (
                 <GridItem xs={12} sm={6} md={4} key={item.assetId}>
                   <Card>
-                    <CardHeader color={getRandomColor()} stats={true} icon>
+                    <CardHeader color={getRandomColor()} icon>
                       <CardIcon color={getRandomColor()}>
                         <Icon>content_copy</Icon>
                       </CardIcon>
@@ -94,6 +94,7 @@ class Address extends React.Component {
                 </GridItem>
               );
             }
+            return null;
           })}
         </GridContainer>
 

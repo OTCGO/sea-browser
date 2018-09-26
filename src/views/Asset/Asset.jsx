@@ -73,7 +73,7 @@ class Asset extends React.Component {
                     </CardIcon>
                     <p className={classes.cardCategory}>{item.name}</p>
                   </CardHeader>
-                  <CardBody stats>
+                  <CardBody>
                     <h3 className={classes.cardTitle}>{item.value}</h3>
                   </CardBody>
                 </Card>

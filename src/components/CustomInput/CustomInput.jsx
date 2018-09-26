@@ -21,7 +21,9 @@ function CustomInput({ ...props }) {
     labelProps,
     inputProps,
     error,
-    success
+    success,
+    handelChange,
+    handleKeyUp
   } = props;
 
   const labelClasses = classNames({
@@ -58,6 +60,14 @@ function CustomInput({ ...props }) {
         }}
         id={id}
         {...inputProps}
+        onChange={e => {
+          //console.log("e.target.value", e.target.value);
+          handelChange(e.target.value);
+        }}
+        onKeyUp={e => {
+          console.log("value", e.target.value);
+          e.keyCode === 13 && handleKeyUp(e.target.value);
+        }}
       />
       {error ? (
         <Clear className={classes.feedback + " " + classes.labelRootError} />

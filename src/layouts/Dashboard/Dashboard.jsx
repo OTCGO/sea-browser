@@ -15,7 +15,7 @@ import Sidebar from "components/Sidebar/Sidebar.jsx";
 import dashboardRoutes from "routes/dashboard.jsx";
 
 import dashboardStyle from "assets/jss/material-dashboard-react/layouts/dashboardStyle.jsx";
-
+import { FormattedMessage } from 'react-intl';
 import image from "assets/img/sidebar-2.jpg";
 import logo from "assets/img/reactlogo.png";
 
@@ -71,7 +71,8 @@ class App extends React.Component {
       <div className={classes.wrapper}>
         <Sidebar
           routes={dashboardRoutes}
-          logoText={"区块浏览器"}
+          logoText={
+          "11" }
           logo={logo}
           image={image}
           handleDrawerToggle={this.handleDrawerToggle}
